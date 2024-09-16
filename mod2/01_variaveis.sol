@@ -92,9 +92,9 @@ contract Exemplovariavel {
 /* 
 "external", "view", e "pure" são palavras-chave usadas para definir características específicas das funções. Lembre-se:
 
-- **"external"**: Indica que a função só pode ser chamada de fora do contrato. Internamente, você deve usar `this.functionName()` para chamá-la. Esse modificador ajuda a controlar a visibilidade das funções e a otimizar o contrato.
+- "external": Indica que a função só pode ser chamada de fora do contrato. Internamente, você deve usar `this.functionName()` para chamá-la. Quando você chama uma função external através de this.functionName(), você está criando uma chamada de função externa, que implica custas adicionais de gás, já que a chamada é tratada como uma transação externa. Esse modificador ajuda a controlar a visibilidade das funções e a otimizar o contrato.
 
-- **"view"**: Aplica-se a funções que apenas leem os dados do contrato, sem modificar seu estado. Usar esse modificador informa ao compilador e aos usuários que a função é somente para leitura, ajudando na eficiência do contrato.
+- "view": Aplica-se a funções que apenas leem os dados do contrato, sem modificar seu estado. Usar esse modificador informa ao compilador e aos usuários que a função é somente para leitura, ajudando na eficiência do contrato.
 
-- **"pure"**: É mais restritivo, pois a função marcada como "pure" não pode acessar nem alterar o estado do contrato. Ela só pode operar com os parâmetros fornecidos e realizar cálculos internos. Ao contrário de "external", uma função "pure" pode ser chamada diretamente dentro do contrato, sem a necessidade de usar `this.functionName()`.
+- "pure": É mais restritivo, pois a função marcada como "pure" não pode acessar nem alterar o estado do contrato. Ela só pode operar com os parâmetros fornecidos e realizar cálculos internos. Ao contrário de "external", uma função "pure" pode ser chamada diretamente dentro do contrato, sem a necessidade de usar `this.functionName()`.
 */
