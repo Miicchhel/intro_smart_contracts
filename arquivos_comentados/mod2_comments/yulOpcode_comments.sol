@@ -1,6 +1,3 @@
-Claro! Vou adicionar comentários detalhados explicando cada parte do código Solidity. Aqui está o código comentado:
-
-```solidity:OpcodeGas.sol
 // SPDX-License-Identifier: GPL-3.0
 // Esta linha especifica a licença sob a qual o código é distribuído. Neste caso, é a GNU General Public License v3.0.
 
@@ -37,8 +34,7 @@ contract OpcodeGas {
         return result;  // Retorna o resultado da soma
     }
 }
-```
-
+/*
 Explicações adicionais:
 
 1. Estrutura do contrato:
@@ -68,4 +64,4 @@ Explicações adicionais:
    - No entanto, a diferença pode ser mínima para operações simples como esta soma.
 
 Este contrato serve como um exemplo didático para comparar o uso de Solidity padrão com assembly inline em termos de eficiência de gás e complexidade do código.
-
+*/
